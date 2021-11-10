@@ -19,7 +19,7 @@ Just putting these basic steps to help starters:
 3. If everything goes alright, you can start testing
 4. In case or any error, check Build and Logcat tab for details
 
-### Permissions needed in <a href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/AndroidManifest.xml">AndroidManifest.xml</a>
+### Permissions needed in <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/AndroidManifest.xml">AndroidManifest.xml</a>
 Followings are permissions required for all the mentioned features to work.
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
@@ -34,15 +34,15 @@ Followings are permissions required for all the mentioned features to work.
 `SYSTEM_ALERT_WINDOW` permission to show permission overlay.
 
 ### Custom WebView
-<a href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebView.java">BurstWebView.java</a> is a custom WebView which is extended from WebView and has necessary changes to take care of prompting the permission popup for camera and media, and opening of file chooser.
-Note to developer: Update package and import of <a href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebViewClient.java">BurstWebViewClient.java</a> in <a href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebView.java">BurstWebView.java</a> and leave rest of the file as is.
+<a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebView.java">BurstWebView.java</a> is a custom WebView which is extended from WebView and has necessary changes to take care of prompting the permission popup for camera and media, and opening of file chooser.
+Note to developer: Update package and import of <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebViewClient.java">BurstWebViewClient.java</a> in <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebView.java">BurstWebView.java</a> and leave rest of the file as is.
 
 ### Custom WebViewClient
-<a href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebViewClient.java">BurstWebViewClient.java</a> is a custom WebViewClient which is extended from WebViewClient and has necessary changes to take care of prompting mailing app list on clicking 'mailto' link.
-Note to developer: Update package in <a href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebViewClient.java">BurstWebViewClient.java</a> and leave rest of the file as is.
+<a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebViewClient.java">BurstWebViewClient.java</a> is a custom WebViewClient which is extended from WebViewClient and has necessary changes to take care of prompting mailing app list on clicking 'mailto' link.
+Note to developer: Update package in <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebViewClient.java">BurstWebViewClient.java</a> and leave rest of the file as is.
 
 ### What else
-Developer should update the Burst Embed WebView reference to BurstWebView in their <a href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/res/layout/activity_main.xml">layout</a> and <a href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/MainActivity.java">activity</a> files.
+Developer should update the Burst Embed WebView reference to BurstWebView in their <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/res/layout/activity_main.xml">layout</a> and <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/MainActivity.java">activity</a> files.
 #### Example change in layout file:
 from
 WebView
@@ -57,13 +57,13 @@ private BurstWebView webView;
 webView = (BurstWebView) findViewById(R.id.burstWebview);
 #### Check MainActivity.java for more detailed changes that are needed in the onCreate and onActivityResult functions.
 #### Check @todo statements in the below files where all the changes needed are highlighted
-1. <a href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebView.java">BurstWebView.java</a>
-2. <a href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebViewClient.java">BurstWebViewClient.java</a>
-3. <a href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/AndroidManifest.xml">AndroidManifest.xml</a>
-4. <a href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/res/layout/activity_main.xml">activity_main.xml</a>
-5. <a href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/MainActivity.java">MainActivity.java</a>
+1. <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebView.java">BurstWebView.java</a>
+2. <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebViewClient.java">BurstWebViewClient.java</a>
+3. <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/AndroidManifest.xml">AndroidManifest.xml</a>
+4. <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/res/layout/activity_main.xml">activity_main.xml</a>
+5. <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/MainActivity.java">MainActivity.java</a>
 
 ## About Project
-This project is developed by team at <a href="https://www.burst.com">Burst</a>.
+This project is developed by team at <a targent="_blank" href="https://www.burst.com">Burst</a>.
 
 **PROJECT NOTE:** Android 4.4 doesn't support WebView upload default method and it's a permanent bug as no more KitKat updates are going to be made. All other versions are working fine.
