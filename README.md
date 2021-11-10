@@ -55,7 +55,7 @@ from<br/>
 to<br/>
 `private BurstWebView webView;`<br/>
 `webView = (BurstWebView) findViewById(R.id.burstWebview);`<br/>
-#### Check MainActivity.java for more detailed changes that are needed in the `onCreate` and `onActivityResult` functions.
+#### Check <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/MainActivity.java">MainActivity.java</a> for more detailed changes that are needed in the `onCreate` and `onActivityResult` functions.
 #### Check @todo statements in the below files where all the changes needed are highlighted
 1. <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebView.java">BurstWebView.java</a>
 2. <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebViewClient.java">BurstWebViewClient.java</a>
