@@ -10,7 +10,7 @@ This project helps android developers to solve below problems:
 This project contains android application build files, that you can download and use directly with latest Android Studio. Follow further steps to get started in your personalised environment.
 
 ### Requirements
-Minimum Android API 16+ (4.1 JellyBean) SDK. You can use any IDE of your choice but to be specific, I used latest Android Studio 2020.3.1 last updated on July 27th, 2021 with updated SDKs and Builds.
+Minimum Android API 16+ (4.1 JellyBean) SDK. You can use any IDE of your choice but to be specific, we used latest Android Studio 2020.3.1 last updated on July 27th, 2021 with updated SDKs and Builds.
 
 ### Test Run
 Just putting these basic steps to help starters:
@@ -28,34 +28,34 @@ Followings are permissions required for all the mentioned features to work.
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 ```
-`INTERNET` permission is required to access online content,
-`WRITE_EXTERNAL_STORAGE`+`CAMERA` permissions to take photo from camera and save it to gallery,
-`READ_EXTERNAL_STORAGE` permission to access photo or video from gallery,
+`INTERNET` permission is required to access online content,<br/>
+`WRITE_EXTERNAL_STORAGE`+`CAMERA` permissions to take photo from camera and save it to gallery,<br/>
+`READ_EXTERNAL_STORAGE` permission to access photo or video from gallery,<br/>
 `SYSTEM_ALERT_WINDOW` permission to show permission overlay.
 
 ### Custom WebView
-<a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebView.java">BurstWebView.java</a> is a custom WebView which is extended from WebView and has necessary changes to take care of prompting the permission popup for camera and media, and opening of file chooser.
+<a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebView.java">BurstWebView.java</a> is a custom WebView which is extended from WebView and has necessary changes to take care of prompting the permission popup for camera and media, and opening of file chooser.<br/>
 Note to developer: Update package and import of <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebViewClient.java">BurstWebViewClient.java</a> in <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebView.java">BurstWebView.java</a> and leave rest of the file as is.
 
 ### Custom WebViewClient
-<a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebViewClient.java">BurstWebViewClient.java</a> is a custom WebViewClient which is extended from WebViewClient and has necessary changes to take care of prompting mailing app list on clicking 'mailto' link.
+<a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebViewClient.java">BurstWebViewClient.java</a> is a custom WebViewClient which is extended from WebViewClient and has necessary changes to take care of prompting mailing app list on clicking 'mailto' link.<br/>
 Note to developer: Update package in <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebViewClient.java">BurstWebViewClient.java</a> and leave rest of the file as is.
 
 ### What else
 Developer should update the Burst Embed WebView reference to BurstWebView in their <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/res/layout/activity_main.xml">layout</a> and <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/MainActivity.java">activity</a> files.
 #### Example change in layout file:
-from
-WebView
-to
-com.example.burstgallery.BurstWebView
+from<br/>
+`WebView`<br/>
+to<br/>
+`com.example.burstgallery.BurstWebView`
 #### Example change in activity file:
-from
-private WebView webView;
-webView = = (WebView) findViewById(R.id.burstWebview);
-to
-private BurstWebView webView;
-webView = (BurstWebView) findViewById(R.id.burstWebview);
-#### Check MainActivity.java for more detailed changes that are needed in the onCreate and onActivityResult functions.
+from<br/>
+`private WebView webView;`<br/>
+`webView = = (WebView) findViewById(R.id.burstWebview);`<br/>
+to<br/>
+`private BurstWebView webView;`<br/>
+`webView = (BurstWebView) findViewById(R.id.burstWebview);`<br/>
+#### Check MainActivity.java for more detailed changes that are needed in the `onCreate` and `onActivityResult` functions.
 #### Check @todo statements in the below files where all the changes needed are highlighted
 1. <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebView.java">BurstWebView.java</a>
 2. <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebViewClient.java">BurstWebViewClient.java</a>
