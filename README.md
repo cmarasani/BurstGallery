@@ -26,12 +26,10 @@ Followings are permissions required for all the mentioned features to work.
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.CAMERA" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 ```
 `INTERNET` permission is required to access online content,<br/>
 `WRITE_EXTERNAL_STORAGE`+`CAMERA` permissions to take photo from camera and save it to gallery,<br/>
 `READ_EXTERNAL_STORAGE` permission to access photo or video from gallery,<br/>
-`SYSTEM_ALERT_WINDOW` permission to show permission overlay.
 
 ### Custom WebView
 <a targent="_blank" href="https://github.com/cmarasani/BurstGallery/blob/main/app/src/main/java/com/example/burstgallery/BurstWebView.java">BurstWebView.java</a> is a custom WebView which is extended from WebView and has necessary changes to take care of prompting the permission popup for camera and media, and opening of file chooser.<br/>
